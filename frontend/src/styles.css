@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    background: linear-gradient(135deg, #ffffff, #e2dfdf); /* Elegant light white gradient */
+    min-height: 100vh;
+    color: #f4ecec;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  /* Subtle, elegant texture effect */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 30px 30px; /* Larger pattern for refinement */
+    opacity: 0.3; /* Subtler texture */
+    z-index: -1;
+  }
+  
+  .main-container {
+    background: #adebff; /* Pure white for crisp elegance */
+    border: 5px solid #d4af37; /* Gold border for classic luxury */
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); /* Softer shadow for airy feel */
+    padding: 2.5rem;
+    max-width: 850px;
+    margin: 3rem auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Enhance grid border */
+  .grid {
+    border: 2px solid #d4af37; /* Gold border for maze grid */
+    border-radius: 8px;
+    background: #ffffff; /* White grid background */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06); /* Very subtle shadow */
+  }
+  
+  /* Wall styling */
+  .wall {
+    background: #ffffff; /* White walls */
+    border: 2px solid #6b7280; /* Gray border to distinguish from path cells */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  }
+  
+  /* Scoped button hover effect to avoid conflicts with Tailwind */
+  .main-container button {
+    transition: all 0.3s ease;
+  }
+  
+  .main-container button:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05) translateY(-2px);
+  }
+  
+  /* Title shadow for white text visibility */
+  .title-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Stronger shadow for contrast */
+  }
+  
+  /* Custom gold border utility */
+  .border-d4af37 {
+    border-color: #d4af37; /* Gold border to match theme */
+  }
+  
+  /* No-path message styling */
+  .no-path-message {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for elegance */
+    color: #dc2626; /* Vibrant red for visibility */
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #d4af37; /* Gold border to match theme */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: center;
+  }
